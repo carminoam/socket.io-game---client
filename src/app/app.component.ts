@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import io from 'socket.io-client';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
 
 
   public ngOnInit() {
-    this.socket = io("http://localhost:3001");
+    this.socket = io(environment.serverUrl);
   }
 
   public ngAfterViewInit() {
