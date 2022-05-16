@@ -1,1 +1,1 @@
-# socket.io-game---client
+# socket.io-square-moves---client
